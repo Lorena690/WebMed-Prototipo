@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmed - Salud A-Z</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+        header button {
+            background-color: #f5f5f5;
+            border: none;
+            border-radius: 30px;
+            color: #4CAF50;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: 0.3s all ease;
+        }
+        header button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            margin: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-box input[type="text"] {
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            padding: 10px;
+            width: 60%;
+            background: #f1f1f1;
+        }
+        .search-box button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: 0.3s all ease;
+        }
+        .search-box button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        footer {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 1rem;
+            border-top: 5px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Webmed - Salud A-Z</h1>
+        <button onclick="location.href='home.html'">Volver al Home</button>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar enfermedad...">
+            <button>Buscar</button>
+        </div>
+        <ul>
+            <li>Acné</li>
+            <li>Alzheimer</li>
+            <li>Artritis</li>
+            <li>Hipertensión</li>
+            <li>Obesidad</li>
+            <li>Sinusitis</li>
+            <li>Migraña</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; Webmed - Sistema de Servicios de Salud</p>
+    </footer>
+</body>
+</html>

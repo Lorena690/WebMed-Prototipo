@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmed - Healthcare Service System - Facilities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        h2 {
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+
+        .facility-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 2rem);
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .facility-card h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .facility-card button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            margin-top: 15px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .facility-card button:hover {
+            background-color: #81C784;
+        }
+
+        footer {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Webmed - Healthcare Service System</h1>
+    </header>
+
+    <section>
+        <h2>Facilidades</h2>
+        <div class="container">
+            <div class="facility-card">
+                <h3>Finanzas</h3>
+                <p>Compra de seguros y pago de servicios médicos.</p>
+                <button onclick="window.location.href = 'finanzas.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Salud A-Z</h3>
+                <p>Información sobre enfermedades y sus síntomas.</p>
+                <button onclick="window.location.href = 'salud-a-z.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Recursos</h3>
+                <p>Herramientas como verificador de síntomas, calculadora de salud y más.</p>
+                <button onclick="window.location.href = 'recursos.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Medicamentos y suplementos</h3>
+                <p>Compra medicamentos en línea con entrega a domicilio.</p>
+                <button onclick="window.location.href = 'medicamentosysuplementos.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Noticias y expertos</h3>
+                <p>Información actualizada sobre salud y eventos relacionados.</p>
+                <button onclick="window.location.href = 'noticiasyexpertos.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Pagos</h3>
+                <p>Gestiona los pagos por servicios médicos y medicamentos en línea.</p>
+                <button onclick="window.location.href = 'pagos.html';">Acceder</button>
+            </div>
+
+            <div class="facility-card">
+                <h3>Comentarios</h3>
+                <p>Comparte tu experiencia y opiniones sobre el sistema.</p>
+                <button onclick="window.location.href = 'comentarios.html';">Acceder</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Webmed - Healthcare Service System</p>
+    </footer>
+</body>
+</html>

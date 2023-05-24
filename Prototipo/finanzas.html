@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmed - Finanzas</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F6F8;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-weight: 300;
+        }
+
+        header button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+        }
+
+        header button:hover {
+            background-color: #8BC34A;
+            box-shadow: 0 15px 20px rgba(76, 175, 80, 0.3);
+            transform: translateY(-7px);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-weight: 400;
+            color: #4CAF50;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            margin-top: 15px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+        }
+
+        .card button:hover {
+            background-color: #8BC34A;
+            box-shadow: 0 15px 20px rgba(76, 175, 80, 0.3);
+            transform: translateY(-7px);
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            box-shadow: 0 -4px 6px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Webmed - Finanzas</h1>
+        <button onclick="location.href='home.html'">Volver al Home</button>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>Compra de Seguros</h3>
+            <p>Explora y adquiere los mejores planes de seguros para ti y tu familia.</p>
+            <button onclick="location.href='https://www.example.com/comprar-seguro'">Comprar Seguro</button>
+        </div>
+        <div class="card">
+            <h3>Pagar por Servicios</h3>
+            <p>Realiza pagos por servicios médicos consumidos en hospitales o clínicas.</p>
+            <button onclick="location.href='https://www.example.com/pagar-servicio'">Realizar Pago</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Webmed - Sistema de Servicios de Salud</p>
+    </footer>
+</body>
+</html>
